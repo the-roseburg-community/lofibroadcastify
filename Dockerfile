@@ -11,6 +11,10 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json .
 COPY package-lock.json .
 RUN npm install
+RUN npm update --save
+RUN npm install --save-dev @babel/plugin-proposal-private-property-in-object
+
+
 #RUN npm install react-scripts@3.4.1 -g --silent
 
 # add app
