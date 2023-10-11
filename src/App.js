@@ -52,7 +52,7 @@ function App() {
       <Container maxWidth="sm">
         <Box sx={{ textAlign: 'center', marginTop: 4, position: 'relative' }}>
           <Typography variant="h2" component="h1" className="site-title">
-            Lofi Broadcastify
+            The Roseburg Receiver - Lofi Radio
           </Typography>
           {currentScreen === SCREENS.AUDIO_PLAYER && (
             <div className="sidebar-action">
@@ -73,7 +73,7 @@ function App() {
             />
           )}
           <AudioWrapper
-            url="http://broadcastify.cdnstream1.com/39207"
+            url="https://listen.roseburg.city:8000/radio.mp3"
             play={play}
             volume={broadcastVolume}
           />
