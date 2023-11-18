@@ -20,5 +20,7 @@ RUN npm install --save-dev @babel/plugin-proposal-private-property-in-object
 # add app
 COPY . ./
 
+EXPOSE 3000
+
 # start app
 CMD ["npm", "start"]
